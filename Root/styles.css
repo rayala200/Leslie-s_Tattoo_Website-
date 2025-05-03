@@ -1,0 +1,83 @@
+/* ------------------- */
+/*      GLOBAL STYLES   */
+/* ------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto";
+   
+}
+
+
+
+/* ------------------- */
+/*      Navbar STYLES   */
+/* ------------------- */
+.navbar {
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    max-width: 1440px; 
+    margin: 0 auto;
+    z-index: 1000;
+
+
+}
+.navbar h1 {
+    font-family:"Lucky";
+    font-size: 24px;
+    font: 500;
+   
+}
+
+
+.nav_links{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+ 
+}
+.nav_links li a{
+    /* display: inline; */
+    text-decoration: none;
+    align-items: center;
+    color: #111;
+    font-weight: 500;
+    transition: color 0.3s ease;
+   
+}
+.nav_links li a:hover{
+    color: #EAE0C8;
+}
+.navbar-icons{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-icons img {
+    margin-left: 16px;
+    font-size: 18px;
+    color: #111;
+    transition: opacity 0.3s ease;
+  }
+  
+  .navbar-icons img:hover {
+    opacity: 0.6;
+  }
+  /* Logo / Links */
+.left_nav{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+   
+}
