@@ -16,23 +16,51 @@ body {
 /* ------------------- */
 /*      Navbar STYLES   */
 /* ------------------- */
-.navbar {
-    background-color: #FAFAFA;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    align-items: center;
+#navbar {
+    position: fixed;
+    width: 100%; 
+    padding: 20px 40px; 
+    display:flex; 
     justify-content: space-between;
-    padding: 18px 32px;
-    position: sticky;
-    top: 0;
+    align-items: center;
+    background-color: transparent;
+    color: #EAE0C8;
     width: 100%;
     max-width: 1440px; 
-    margin: 0 auto;
     z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+
 
 
 }
-.navbar h1 {
+.top_banner{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    /* height: 100vh;
+    background-image: url("images/Tattoo_images/main_photo.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative; */
+}
+.top_banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% center;
+    top: 0;
+    left: 0; 
+    z-index: -1 ;
+}
+
+.logo {
     font-family:"Lucky";
     font-size: 24px;
     font: 500;
@@ -46,7 +74,7 @@ body {
     gap: 24px;
  
 }
-.nav_links li a{
+.nav_links  a{
     /* display: inline; */
     text-decoration: none;
     align-items: center;
@@ -55,7 +83,7 @@ body {
     transition: color 0.3s ease;
    
 }
-.nav_links li a:hover{
+.nav_links  a:hover{
     color: #EAE0C8;
 }
 .navbar-icons{
@@ -81,3 +109,11 @@ body {
     gap: 32px;
    
 }
+/* ------------------- */
+/*      Video_Background STYLES   */
+/* ------------------- */
+.video_rectangle{
+    background-color: #EAE0C8;
+    width: 100%;
+}
+
